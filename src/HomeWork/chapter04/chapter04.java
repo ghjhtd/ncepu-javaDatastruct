@@ -8,8 +8,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package HomeWork.chapter04;
-import static HomeWork.chapter04.ErrUtil.error;
+package Homework.chapter04;
+import static Homework.chapter04.ErrUtil.error;
 /**
  *
  * @龚皓靖 120191140216 

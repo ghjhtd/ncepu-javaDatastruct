@@ -192,24 +192,24 @@ class BiTree {
 
     
    /**
-    * 使用完全先序序列创建字符二叉树
-    */
-    public BiTNode createPreOrderCharBiTree() {
-        data = getchar("请输入完全先序字符串:").toCharArray();
-        i = 0;
-        return crtPOCharBT();
-    }
-    
-    char[] data = {'A', 'B', ' ', 'C', ' ', ' ', 'D', ' ', ' '};
-     
-   //私有辅助字段i，用于先序创建二叉树createBiTree方法递归调用时数组的位置指针
-    private int i;  
-    /*递归调用创建先序的二叉树*/
-    private BiTNode crtPOCharBT() {
-        BiTNode T;
-        char ch = data[i++];
-        if (ch == ' ') {
-            return null;
+             * 使用完全先序序列创建字符二叉树
+             */
+            public BiTNode createPreOrderCharBiTree() {
+                data = getchar("请输入完全先序字符串:").toCharArray();
+                i = 0;
+                return crtPOCharBT();
+            }
+
+            char[] data = {'A', 'B', ' ', 'C', ' ', ' ', 'D', ' ', ' '};
+
+            //私有辅助字段i，用于先序创建二叉树createBiTree方法递归调用时数组的位置指针
+            private int i;
+            /*递归调用创建先序的二叉树*/
+            private BiTNode crtPOCharBT() {
+                BiTNode T;
+                char ch = data[i++];
+                if (ch == ' ') {
+                    return null;
         } else {
             T = new BiTNode();
             /*生成根结点*/
